@@ -6,6 +6,9 @@ set -g mouse-select-window on
 # improve colors
 set -g default-terminal 'screen-256color'
 
+# Prefix - q to kill the session
+bind q killp
+
 # act like vim
 setw -g mode-keys vi
 bind h select-pane -L
