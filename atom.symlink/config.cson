@@ -1,35 +1,120 @@
-'global':
-  'editor':
-    'showIndentGuide': true
-    'fontFamily': 'Menlo'
-    'fontSize': 15
-  'core':
-    'ignoredNames': [
-      '.bundle'
-      '.git'
-      'log'
-      'repositories'
-      'tmp'
-      'vendor'
+"*":
+  editor:
+    autoIndentOnPaste: true
+    normalizeIndentOnPaste: false
+    showIndentGuide: true
+    fontFamily: "Source Code Pro"
+    invisibles: {}
+    softWrap: true
+    softWrapHangingIndent: 2
+    softTabs: false
+  core:
+    ignoredNames: [
+      ".bundle"
+      ".git"
+      "log"
+      "repositories"
+      "tmp"
+      "vendor"
+      "node_modules"
+      "bower_components"
     ]
-    'themes': [
-      'unity-ui'
-      'glacier-syntax'
+    themes: [
+      "spacegray-dark-ui"
+      "solarized-dark-syntax"
     ]
-    'hideGitIgnoredFiles': true
-    'disabledPackages': [
-      'background-tips'
-      'exception-reporting'
-      'metrics'
+    hideGitIgnoredFiles: true
+    disabledPackages: [
+      "background-tips"
+      "exception-reporting"
+      "metrics"
+      "autocomplete"
+      "jshint"
+      "trailing-spaces"
+      "squarespace-syntax-highlighting"
+      "language-squarespace"
+      "nuclide-click-to-symbol"
+      "atom-color-highlight"
+      "linter-scss-lint"
     ]
-  'spell-check':
-    'grammars': [
-      'text.plain'
-      'source.gfm'
-      'text.git-commit'
+    projectHome: "/Users/imransulemanji/src"
+    audioBeep: false
+  "spell-check":
+    grammars: [
+      "text.plain"
+      "source.gfm"
+      "text.git-commit"
     ]
-  'welcome':
-    'showOnStartup': false
-  'release-notes':
-    'viewedVersion': '0.89.0'
-  'go-plus': {}
+  welcome:
+    showOnStartup: false
+  "release-notes":
+    viewedVersion: "0.89.0"
+  "go-plus": {}
+  react: {}
+  jshint:
+    supportLintingJsx: true
+  linter: {}
+  "autocomplete-plus": {}
+  tabs:
+    showIcons: true
+    usePreviewTabs: true
+    enableVcsColoring: true
+  "linter-lsc": {}
+  "file-icons": {}
+  docblockr:
+    auto_add_method_tag: true
+  "linter-eslint":
+    disableWhenNoEslintrcFileInPath: true
+    showRuleIdInMessage: true
+    useGlobalEslint: true
+    globalNodePath: "/usr/local"
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
+  "language-babel":
+    transpileOnSave: false
+  "file-watcher":
+    promptWhenFileHasChangedOnDisk: false
+  nuclide:
+    remoteProjectsConfig: []
+  "haskell-ghc-mod":
+    ghcModPath: "/Users/imransulemanji/Library/Haskell/bin/ghc-mod"
+    ghcModiPath: "/Users/imransulemanji/Library/Haskell/bin/ghc-modi"
+  "linter-scss-lint":
+    executablePath: "/Users/imransulemanji/.rvm/gems/ruby-2.0.0-p481/bin/scss-lint"
+".js.jsx.source":
+  editor:
+    normalizeIndentOnPaste: "false"
+".babel.regexp.source":
+  editor:
+    normalizeIndentOnPaste: "false"
+".conf.source":
+  editor:
+    normalizeIndentOnPaste: "false"
+".item.source":
+  editor:
+    normalizeIndentOnPaste: "false"
+".list.source":
+  editor:
+    normalizeIndentOnPaste: "false"
+".preset.source":
+  editor:
+    normalizeIndentOnPaste: "false"
+".region.source":
+  editor:
+    normalizeIndentOnPaste: "false"
+".block.source":
+  editor:
+    normalizeIndentOnPaste: "false"
+"exception-reporting":
+  userId: "62c1346c-ec75-19f2-34a0-57dc5d089087"
+welcome:
+  showOnStartup: false
+metrics:
+  userId: "81e81fd73c99ed96c0fa1463e9306db5044749bb"
+core:
+  themes: [
+    "spacegray-dark-ui"
+    "solarized-dark-syntax"
+  ]
+"linter-lsc":
+  lscExecutablePath: "/usr/local/bin/lsc"
