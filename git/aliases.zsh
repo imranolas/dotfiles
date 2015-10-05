@@ -12,8 +12,11 @@ alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C
 alias gp='git push origin HEAD'
 alias gd='git diff'
 alias gc='git commit'
+alias gc!='git commit --amend'
 alias gca='git commit -a'
 alias gco='git checkout'
 alias gcb='git copy-branch-name'
+alias ga='git add'
 alias gb='git branch'
 alias gst='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
+alias gdmb='git branch --merged master | grep -v "\* master" | xargs -n 1 git branch -d' # delete all branches that have been merged to master

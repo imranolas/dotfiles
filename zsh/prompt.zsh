@@ -28,3 +28,8 @@ ZSH_THEME_GIT_PROMPT_DELETED="%{$FG[160]%}✖%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_RENAMED="%{$FG[220]%}➜%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_UNMERGED="%{$FG[082]%}═%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$FG[190]%}✭%{$reset_color%}"
+
+export TERM=screen-256color-bce
+
+# powerline-daemon -q
+# . /Users/imransulemanji/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh

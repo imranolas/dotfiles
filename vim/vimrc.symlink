@@ -1,4 +1,109 @@
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+Plugin 'airblade/vim-gitgutter'
+Plugin 'gkz/vim-ls'
+" Plugin 'scrooloose/syntastic'
+Plugin 'guns/vim-clojure-static'
+Plugin 'kien/ctrlp.vim'
+Plugin 'stephenmckinney/vim-solarized-powerline'
+
+call vundle#end()
+
+" A minimal vimrc for new vim users to start with
+"
+" Referenced here: http://vimuniversity.com/samples/your-first-vimrc-should-be-nearly-empty
+"
+" Original Author:	     Bram Moolenaar <Bram@vim.org>
+" Made more minimal by:  Ben Orenstein
+" Modified by :          Ben McCormick
+" Last change:	         2014 June 8
+"
+" To use it, copy it to
+"  for Unix based systems (including OSX and Linux):  ~/.vimrc
+"  for Windows :  $VIM\_vimrc
+"
+"  If you don't understand a setting in here, just type ':h setting'.
+
+" Use Vim settings, rather than Vi settings (much better!).
+" This must be first, because it changes other options as a side effect.
+set nocompatible
+
+" Make backspace behave in a sane manner.
+set backspace=indent,eol,start
+
+" Switch syntax highlighting on
 syntax on
 
-" Wrap gitcommit file types at the appropriate length
-filetype indent plugin on
+" Enable file type detection and do language-dependent indenting.
+filetype plugin indent on
+
+" Show line numbers
+set number
+
+" Allow hidden buffers, don't limit to 1 file per window/split
+set hidden
+
+set updatetime=500
+
+" Set theme
+syntax enable
+set background=dark
+" solarized options
+let g:solarized_termtrans = 1
+colorscheme solarized
+
+" Syntastic linter setting
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+let g:syntastic_javascript_checkers = ['eslint']
+
+" GitGutter
+let g:gitgutter_realtime = 1
+
+" ctrlp settings
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn|node_modulesjj)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
+
+" Powerline
+set rtp+=/Users/raguay/Library/Python/2.7/lib/python/site-packages/powerline/bindings/vim
+
+" These lines setup the environment to show graphics and colors correctly.
+set t_Co=256
+
+let g:minBufExplForceSyntaxEnable = 1
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
+
+if ! has('gui_running')
+   set ttimeoutlen=10
+   augroup FastEscape
+      autocmd!
+      au InsertEnter * set timeoutlen=0
+      au InsertLeave * set timeoutlen=1000
+   augroup END
+endif
+
+set laststatus=2 " Always display the statusline in all windows
+set guifont=Inconsolata\ for\ Powerline:h14
+set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
+
+let g:Powerline_theme='short'
+let g:Powerline_colorscheme='solarized256_dark'

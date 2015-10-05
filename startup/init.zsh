@@ -1,0 +1,1 @@
+. $ZSH/startup/z.sh
