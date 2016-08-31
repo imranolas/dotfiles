@@ -1,1 +1,0 @@
-alias b2d='boot2docker down && boot2docker up && reload!'

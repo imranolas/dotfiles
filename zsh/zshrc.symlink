@@ -46,3 +46,8 @@ do
 done
 
 unset config_files
+
+export NVM_DIR="/Users/imran/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home
+fpath=(/usr/local/share/zsh-completions $fpath)

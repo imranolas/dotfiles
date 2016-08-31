@@ -1,90 +1,71 @@
 "*":
-  editor:
-    autoIndentOnPaste: true
-    normalizeIndentOnPaste: false
-    showIndentGuide: true
-    fontFamily: "Source Code Pro"
-    invisibles: {}
-    softWrap: true
-    softWrapHangingIndent: 2
-    softTabs: false
+  "atom-beautify":
+    general:
+      _analyticsUserId: "25443d91-2630-4f24-bb00-5dada8ec3686"
+  "autocomplete-python":
+    extraPaths: "$PROJECT"
+    useSnippets: "required"
+  autosave:
+    enabled: true
   core:
-    ignoredNames: [
-      ".bundle"
-      ".git"
-      "log"
-      "repositories"
-      "tmp"
-      "vendor"
-      "node_modules"
-      "bower_components"
-    ]
-    themes: [
-      "spacegray-dark-ui"
-      "solarized-dark-syntax"
-    ]
-    hideGitIgnoredFiles: true
     disabledPackages: [
-      "background-tips"
-      "exception-reporting"
-      "metrics"
-      "autocomplete"
-      "jshint"
-      "trailing-spaces"
-      "squarespace-syntax-highlighting"
-      "language-squarespace"
-      "nuclide-click-to-symbol"
-      "atom-color-highlight"
-      "linter-scss-lint"
+      "linter-javac"
+      "ide-flow"
+      "language-javascript-jsx"
+      "nuclide-flow"
+      "autocomplete-project-paths"
+      "linter-pylint"
+      "linter-flow"
+      "vim-mode"
     ]
-    projectHome: "/Users/imransulemanji/src"
-    audioBeep: false
-  "spell-check":
-    grammars: [
-      "text.plain"
-      "source.gfm"
-      "text.git-commit"
-    ]
+  editor:
+    fontFamily: "Operator Mono"
+    invisibles: {}
+    lineHeight: 1.6
+    showIndentGuide: true
+    softWrap: true
+    tabType: "soft"
+  "exception-reporting":
+    userId: "8433cc63-08e8-7beb-836d-68ed07fe0002"
+  "ide-flow":
+    flowPath: "/usr/local/bin/flow"
+  "js-hyperclick": {}
+  "language-babel": {}
+  linter:
+    errorPanelHeight: 112
+  "linter-eslint":
+    fixOnSave: true
+    globalNodePath: "/usr/local"
+    useGlobalEslint: true
+  "linter-flow": {}
+  "linter-javac": {}
+  "linter-pylint":
+    rcFile: "%p/config/pylint.rcfile"
+  "linter-scss-lint": {}
+  "lisp-paredit": {}
+  pigments:
+    extendAutocompleteToVariables: true
+    groupPaletteColors: "by file"
+    mergeColorDuplicates: true
+  tabs:
+    enableVcsColoring: true
+    usePreviewTabs: true
+  "tree-view":
+    autoReveal: true
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
-  "release-notes":
-    viewedVersion: "0.89.0"
-  "go-plus": {}
-  react: {}
-  jshint:
-    supportLintingJsx: true
-  linter: {}
-  "autocomplete-plus": {}
-  tabs:
-    showIcons: true
-    usePreviewTabs: true
-    enableVcsColoring: true
-  "linter-lsc": {}
-  "file-icons": {}
-  docblockr:
-    auto_add_method_tag: true
-  "linter-eslint":
-    disableWhenNoEslintrcFileInPath: true
-    showRuleIdInMessage: true
-    useGlobalEslint: true
-    globalNodePath: "/usr/local"
   whitespace:
     ignoreWhitespaceOnCurrentLine: false
-  "language-babel":
-    transpileOnSave: false
-  "file-watcher":
-    promptWhenFileHasChangedOnDisk: false
-  nuclide:
-    remoteProjectsConfig: []
-  "haskell-ghc-mod":
-    ghcModPath: "/Users/imransulemanji/Library/Haskell/bin/ghc-mod"
-    ghcModiPath: "/Users/imransulemanji/Library/Haskell/bin/ghc-modi"
-  "linter-scss-lint":
-    executablePath: "/Users/imransulemanji/.rvm/gems/ruby-2.0.0-p481/bin/scss-lint"
-".js.jsx.source":
+".attribute-values.js.jsx.source":
   editor:
     normalizeIndentOnPaste: "false"
+    preferredLineLength: 120
+    softWrapHangingIndent: 2
 ".babel.regexp.source":
+  editor:
+    normalizeIndentOnPaste: "false"
+".block.source":
   editor:
     normalizeIndentOnPaste: "false"
 ".conf.source":
@@ -93,6 +74,21 @@
 ".item.source":
   editor:
     normalizeIndentOnPaste: "false"
+".js.jsx.react.source":
+  editor:
+    normalizeIndentOnPaste: "false"
+    preferredLineLength: 120
+    softWrapHangingIndent: 2
+".js.jsx.source":
+  editor:
+    normalizeIndentOnPaste: "false"
+    preferredLineLength: 120
+    softWrapHangingIndent: 2
+".js.source.subtlegradient":
+  editor:
+    normalizeIndentOnPaste: "true"
+    preferredLineLength: 120
+    softWrapHangingIndent: 2
 ".list.source":
   editor:
     normalizeIndentOnPaste: "false"
@@ -102,19 +98,18 @@
 ".region.source":
   editor:
     normalizeIndentOnPaste: "false"
-".block.source":
-  editor:
-    normalizeIndentOnPaste: "false"
-"exception-reporting":
-  userId: "62c1346c-ec75-19f2-34a0-57dc5d089087"
-welcome:
-  showOnStartup: false
-metrics:
-  userId: "81e81fd73c99ed96c0fa1463e9306db5044749bb"
 core:
   themes: [
     "spacegray-dark-ui"
-    "solarized-dark-syntax"
+    "base16-tomorrow-dark-theme"
   ]
+"exception-reporting":
+  userId: "62c1346c-ec75-19f2-34a0-57dc5d089087"
+goto:
+  moreIgnoresNames: ".unison*, .vagrant, /log, target/, *.iml, *.ipr, *.iws, *.log, *.pyc,, .DS_Store,, */bin, cordova_out, plz-out, .plz-cache, .plzconfig.local,, .idea/, .tmp*/, dist/, .sass-cache/, #*, .#*, third_party/**/package.json, *.sublime-*, .boto, ml/models, !ml/models/B*, */frontend/**/static/local-test-json/**, abacus/frontend/static/*.html"
 "linter-lsc":
   lscExecutablePath: "/usr/local/bin/lsc"
+metrics:
+  userId: "81e81fd73c99ed96c0fa1463e9306db5044749bb"
+welcome:
+  showOnStartup: false
