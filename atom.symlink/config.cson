@@ -18,6 +18,10 @@
       "linter-flow"
       "vim-mode"
     ]
+    themes: [
+      "one-dark-ui"
+      "oceanic-next"
+    ]
   editor:
     fontFamily: "Operator Mono"
     invisibles: {}
