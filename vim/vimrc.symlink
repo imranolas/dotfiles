@@ -1,0 +1,21 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+syntax on
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+let g:jsx_ext_required = 0 " Allow JSX in normal JS files
+
+highlight Comment gui=italic
+highlight Comment cterm=italic
+highlight htmlArg gui=italic
+highlight htmlArg cterm=italic
+highlight xmlArg gui=italic
+highlight xmlArg cterm=italic
+
+call vundle#end()
+filetype plugin indent on
