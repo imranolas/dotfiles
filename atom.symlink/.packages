@@ -8,7 +8,7 @@ bezier-curve-editor@0.7.2
 builder-go@1.0.1
 change-case@0.6.3
 dash@1.6.2
-docblockr@0.8.4
+docblockr@0.8.5
 dockerletion@0.2.0
 ex-mode@0.13.0
 file-icons@1.7.19
@@ -24,7 +24,7 @@ gometalinter-linter@1.1.1
 gorename@1.0.3
 hyperclick@0.0.37
 js-hyperclick@1.4.2
-language-babel@2.36.0
+language-babel@2.36.1
 language-docker@1.1.7
 language-elm@1.5.0
 language-graphql@0.2.0

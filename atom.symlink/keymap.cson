@@ -1,0 +1,3 @@
+'.platform-darwin atom-text-editor':
+  'alt-cmd-enter': 'hyperclick:confirm-cursor'
+  'g f': 'hyperclick:confirm-cursor'
