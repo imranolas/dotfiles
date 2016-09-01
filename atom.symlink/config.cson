@@ -8,16 +8,6 @@
   autosave:
     enabled: true
   core:
-    disabledPackages: [
-      "linter-javac"
-      "ide-flow"
-      "language-javascript-jsx"
-      "nuclide-flow"
-      "autocomplete-project-paths"
-      "linter-pylint"
-      "linter-flow"
-      "vim-mode"
-    ]
     themes: [
       "one-dark-ui"
       "oceanic-next"
@@ -34,7 +24,8 @@
   "ide-flow":
     flowPath: "/usr/local/bin/flow"
   "js-hyperclick": {}
-  "language-babel": {}
+  "language-babel":
+    createTargetDirectories: false
   linter:
     errorPanelHeight: 112
   "linter-eslint":
@@ -51,6 +42,9 @@
     extendAutocompleteToVariables: true
     groupPaletteColors: "by file"
     mergeColorDuplicates: true
+  "relative-numbers":
+    showAbsoluteNumbers: true
+    trueNumberCurrentLine: false
   tabs:
     enableVcsColoring: true
     usePreviewTabs: true
@@ -68,7 +62,7 @@
     softWrapHangingIndent: 2
 ".babel.regexp.source":
   editor:
-    normalizeIndentOnPaste: "false"
+    normalizeIndentOnPaste: "true"
 ".block.source":
   editor:
     normalizeIndentOnPaste: "false"
@@ -85,7 +79,7 @@
     softWrapHangingIndent: 2
 ".js.jsx.source":
   editor:
-    normalizeIndentOnPaste: "false"
+    normalizeIndentOnPaste: "true"
     preferredLineLength: 120
     softWrapHangingIndent: 2
 ".js.source.subtlegradient":
