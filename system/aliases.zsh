@@ -8,3 +8,9 @@ then
   alias ll="gls -l --color"
   alias la='gls -A --color'
 fi
+
+if $(apm &>/dev/null)
+then
+  alias apm-install="apm install --packages-file ~/.atom/.packages"
+  alias apm-save="apm list --installed --bare > ~/.atom/.packages"
+fi
