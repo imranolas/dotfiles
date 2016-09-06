@@ -26,8 +26,10 @@
   "js-hyperclick": {}
   "language-babel":
     createTargetDirectories: false
+  "language-please": {}
   linter:
     errorPanelHeight: 112
+    statusIconScope: "File"
   "linter-eslint":
     fixOnSave: true
     globalNodePath: "/usr/local"
@@ -90,6 +92,9 @@
 ".list.source":
   editor:
     normalizeIndentOnPaste: "false"
+".please-build.source":
+  editor:
+    tabLength: 4
 ".preset.source":
   editor:
     normalizeIndentOnPaste: "false"

@@ -1,7 +1,6 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 syntax on
-colorscheme OceanicNext
 hi htmlArg gui=italic
 hi Comment gui=italic
 hi Type    gui=italic
@@ -15,7 +14,10 @@ call vundle#begin()
 
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+Plugin 'mhartington/oceanic-next'
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 
 call vundle#end()
 filetype plugin indent on
+
+colorscheme OceanicNext
