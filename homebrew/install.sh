@@ -13,6 +13,11 @@ then
 fi
 
 # Install homebrew packages
-brew install grc coreutils spark git hub
+brew tap caskroom/cask
+brew install zsh grc coreutils git hub mas
+
+brew cask install \
+  iterm2 google-chrome atom spotify colorsnapper \
+  sketch kdiff3 whatsapp 1password
 
 exit 0
