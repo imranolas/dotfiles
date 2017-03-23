@@ -2,48 +2,106 @@
   "atom-beautify":
     general:
       _analyticsUserId: "25443d91-2630-4f24-bb00-5dada8ec3686"
+  "autocomplete-modules":
+    babelPluginModuleResolver: true
+    webpack: true
   "autocomplete-python":
     extraPaths: "$PROJECT"
     useSnippets: "required"
   autosave:
     enabled: true
   core:
+    customFileTypes:
+      "source.ini": [
+        ".buckconfig"
+        ".hgrc"
+        ".flowconfig"
+      ]
+      "source.json": [
+        ".arcconfig"
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
+    disabledPackages: [
+      "autocomplete-please"
+      "language-please"
+      "please-hyperclick"
+      "atom-reason-loader"
+      "linter-shellcheck"
+      "editorconfig"
+      "file-icons"
+    ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "node_modules"
+    ]
+    projectHome: "/Users/imransulemanji/src"
+    telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
       "oceanic-next"
     ]
+    useCustomTitleBar: true
   editor:
     fontFamily: "Operator Mono"
+    fontSize: 15
     invisibles: {}
     lineHeight: 1.6
     showIndentGuide: true
     softWrap: true
-    tabType: "soft"
   "exception-reporting":
     userId: "8433cc63-08e8-7beb-836d-68ed07fe0002"
+  "flow-ide":
+    executablePath: "/usr/local/bin/flow"
   "ide-flow":
     flowPath: "/usr/local/bin/flow"
   "js-hyperclick": {}
   "language-babel":
     createTargetDirectories: false
+    disableWhenNoBabelrcFileInPath: false
   "language-please": {}
   linter:
     errorPanelHeight: 112
     statusIconScope: "File"
   "linter-eslint":
     fixOnSave: true
-    globalNodePath: "/usr/local"
-    useGlobalEslint: true
   "linter-flow": {}
   "linter-javac": {}
   "linter-pylint":
     rcFile: "%p/config/pylint.rcfile"
-  "linter-scss-lint": {}
+  "linter-scss-lint":
+    disableWhenNoConfigFileInPath: true
+  "linter-ui-default":
+    showPanel: true
   "lisp-paredit": {}
+  nuclide:
+    "nuclide-file-tree":
+      hideIgnoredNames: false
+    "nuclide-flow": {}
+    "nuclide-home":
+      showHome: false
+    "nuclide-working-sets": {}
   pigments:
     extendAutocompleteToVariables: true
     groupPaletteColors: "by file"
     mergeColorDuplicates: true
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
+    formatOnSaveSilentError: true
+    prettierOptions:
+      parser: "flow"
+      printWidth: 100
+      singleQuote: true
+    printWidth: 100
+    silenceErrors: true
   "relative-numbers":
     showAbsoluteNumbers: true
     trueNumberCurrentLine: false

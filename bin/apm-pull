@@ -1,0 +1,7 @@
+#!/bin/sh
+#
+# Install atom packages from list
+
+PACKAGES=$HOME/.dotfiles/atom.symlink/.packages
+echo "Install packages from $PACKAGES"
+apm install -packages-file $PACKAGES
