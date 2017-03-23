@@ -14,7 +14,7 @@ fi
 
 # Install homebrew packages
 brew tap caskroom/cask
-brew install zsh grc coreutils git hub mas
+brew install zsh grc coreutils git hub mas thefuck
 
 brew cask install \
   iterm2 google-chrome atom spotify colorsnapper \
