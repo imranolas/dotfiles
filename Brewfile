@@ -1,0 +1,17 @@
+brew "zsh"
+brew "grc"
+brew "coreutils"
+brew "mas"
+brew "thefuck"
+
+tap "caskroom/cask"
+
+cask "iterm2"
+cask "google-chrome"
+cask "atom"
+cask "spotify"
+cask "colorsnapper"
+cask "sketch"
+cask "kdiff3"
+cask "whatsapp"
+cask "1password"
