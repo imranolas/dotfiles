@@ -8,7 +8,7 @@ tap "caskroom/cask"
 
 cask "iterm2"
 cask "google-chrome"
-cask "vscode"
+cask "visual-studio-code"
 cask "spotify"
 cask "colorsnapper"
 cask "sketch"

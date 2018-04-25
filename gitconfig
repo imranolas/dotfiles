@@ -1,5 +1,5 @@
 [push]
-  default = simple
+  default = current
 [color]
   ui = auto
 [commit]
@@ -42,3 +42,6 @@
   tool = vimdiff
   submodule = log
   compactionHeuristic = true
+[user]
+  name = "Imran Sulemanj"
+  email = "imran.sulemanji@gmail.com"

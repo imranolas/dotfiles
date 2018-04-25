@@ -13,14 +13,9 @@ install_or_update_brew() {
 setup_fish() {
   if  [[ $(echo $SHELL) == *fish ]]; then
     echo "Fish installed and set as default"
-  else
-    echo /usr/local/bin/fish | sudo tee -a /etc/shells
-    chsh -s /usr/local/bin/fish
-    fish
   fi
 }
 
 install_or_update_brew
 brew bundle --file=$(git rev-parse --show-toplevel)/Brewfile
 setup_fish
-fisher install
