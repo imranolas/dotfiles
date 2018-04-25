@@ -1,9 +1,6 @@
-brew "zsh"
+brew "fish"
 brew "grc"
 brew "coreutils"
-brew "mas"
-brew "thefuck"
-brew "mas"
 brew "git"
 brew "hub"
 
