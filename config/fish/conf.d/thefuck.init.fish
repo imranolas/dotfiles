@@ -1,0 +1,1 @@
+/Users/imransulemanji/.config/fisherman/thefuck/init.fish

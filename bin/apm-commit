@@ -1,8 +1,0 @@
-#!/bin/sh
-#
-# Save Atom package list
-
-echo "Committing packages..."
-PACKAGES=$HOME/.dotfiles/atom.symlink/.packages
-apm list -i -b > $PACKAGES
-echo "Atom package list commited to $PACKAGES"
