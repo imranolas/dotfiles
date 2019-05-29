@@ -4,3 +4,6 @@
 tags
 .tern-port
 *.orig
+node_modules
+.vscode
+.envrc

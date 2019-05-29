@@ -1,14 +1,17 @@
-set ANDROID_HOME $HOME/Library/Android/sdk
-set PATH $ANDROID_HOME/tools $ANDROID_HOME/platform-tools $PATH
-set PATH $HOME/.fastlane/bin $PATH
 set PATH ./node_modules/.bin $PATH
-set PATH /Users/imransulemanji/lib/vsts-cli/bin $PATH
 
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.fish ]; and . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.fish
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.fish ]; and . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.fish
+abbr vim "nvim"
+abbr gst "git status --short"
+abbr gc "git commit -v"
+abbr gc! "git commit --amend"
+abbr glog "git log --graph --topo-order --decorate --oneline --boundary"
+abbr gb "git branch"
+abbr gco "git checkout"
+abbr gp "git push -u origin"
+abbr gl "git pull --rebase"
+abbr l "ls -la"
 
-status --is-interactive; and source (rbenv init -|psub)
+direnv hook fish | source
+
+test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
+

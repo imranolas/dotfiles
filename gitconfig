@@ -1,7 +1,7 @@
 [push]
-  default = current
+	default = current
 [color]
-  ui = auto
+	ui = true
 [commit]
   template = ~/.gitmessage
 [fetch]
@@ -20,8 +20,6 @@
   lol = log --oneline
 [credential]
   helper = osxkeychain
-[url "git@github.com:"]
-  insteadOf = https://github.com/
 [pull]
   rebase = true
 [core]
@@ -29,19 +27,31 @@
   excludesfile = ~/.gitignore
 [interactive]
   diffFilter = diff-so-fancy
-[mergetool "vimdiff"]
-  cmd = nvim -d $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
-[difftool]
-  prompt = false
+[merge]
+    tool = vscode
+[mergetool "vscode"]
+    cmd = code --wait $MERGED
 [mergetool]
   prompt = true
-[merge]
-  ff = only
-  tool = vimdiff
 [diff]
-  tool = vimdiff
-  submodule = log
-  compactionHeuristic = true
+    tool = vscode
+	renameLimit = 644
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
 [user]
   name = "Imran Sulemanj"
-  email = "imran.sulemanji@gmail.com"
+  email = "imran.sulemanji@formidable.com"
+[branch]
+	autoSetupMerge = always
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = yellow
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
