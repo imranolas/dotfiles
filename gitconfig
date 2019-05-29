@@ -1,0 +1,57 @@
+[push]
+	default = current
+[color]
+	ui = true
+[commit]
+  template = ~/.gitmessage
+[fetch]
+  prune = true
+[include]
+  path = ~/.gitconfig.local
+[status]
+  showUntrackedFiles = all
+[filter "lfs"]
+  clean = git-lfs clean %f
+  smudge = git-lfs smudge %f
+  required = true
+[alias]
+  s = status -s
+  last = log -1
+  lol = log --oneline
+[credential]
+  helper = osxkeychain
+[pull]
+  rebase = true
+[core]
+  pager = diff-so-fancy | less --tabs=4 -RFX
+  excludesfile = ~/.gitignore
+[interactive]
+  diffFilter = diff-so-fancy
+[merge]
+    tool = vscode
+[mergetool "vscode"]
+    cmd = code --wait $MERGED
+[mergetool]
+  prompt = true
+[diff]
+    tool = vscode
+	renameLimit = 644
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+[user]
+  name = "Imran Sulemanj"
+  email = "imran.sulemanji@formidable.com"
+[branch]
+	autoSetupMerge = always
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = yellow
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse

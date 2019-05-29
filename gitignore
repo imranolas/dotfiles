@@ -1,0 +1,9 @@
+.DS_Store
+*.sw[nop]
+.env
+tags
+.tern-port
+*.orig
+node_modules
+.vscode
+.envrc
