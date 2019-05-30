@@ -1,6 +1,6 @@
 set PATH ./node_modules/.bin $PATH
 
-abbr vim "nvim"
+alias vim "nvim"
 abbr gst "git status --short"
 abbr gc "git commit -v"
 abbr gc! "git commit --amend"

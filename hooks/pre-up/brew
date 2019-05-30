@@ -12,11 +12,8 @@ install_or_update_brew() {
 setup_fish() {
   if  [[ $(echo $SHELL) == *fish ]]; then
     echo "Fish installed and set as default"
-  else
-
-    if [[$(cat /etc/shells | grep fish | wc -l) == 1]]
-    
   fi
+
 }
 
 install_or_update_brew
