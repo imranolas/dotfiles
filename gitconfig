@@ -28,19 +28,20 @@
 [interactive]
   diffFilter = diff-so-fancy
 [merge]
-    tool = vscode
+  tool = vscode
 [mergetool "vscode"]
-    cmd = code --wait $MERGED
+  cmd = code --wait $MERGED
 [mergetool]
   prompt = true
 [diff]
-    tool = vscode
+  tool = vscode
 	renameLimit = 644
 [difftool "vscode"]
     cmd = code --wait --diff $LOCAL $REMOTE
 [user]
   name = "Imran Sulemanj"
-  email = "imran.sulemanji@formidable.com"
+  email = "imran.sulemanji@gmail.com"
+	signingkey = A580802781647F34
 [branch]
 	autoSetupMerge = always
 [color "diff-highlight"]
@@ -57,3 +58,5 @@
 	whitespace = red reverse
 [hub]
 	protocol = ssh
+[init]
+	defaultBranch = main

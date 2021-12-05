@@ -1,0 +1,7 @@
+#!/bin/sh
+echo "\n\nInstalling Fonts"
+curl  -L https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip -o /tmp/FiraCode.zip
+echo  "Extracting font files"
+unzip /tmp/FiraCode.zip -d /tmp/FiraCode
+mv /tmp/FiraCode/*  ~/Library/Fonts/
+echo "\n\nFont Installed"

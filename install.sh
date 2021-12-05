@@ -15,5 +15,5 @@ brew tap thoughtbot/formulae
 brew install rcm
 
 echo "Installing dotfiles"
-rcup $(git rev-parse --show-toplevel)
+rcup $(git rev-parse --show-toplevel) -x install.sh -x Brewfile -x README.md
 

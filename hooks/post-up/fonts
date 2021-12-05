@@ -1,11 +1,8 @@
 #!/bin/sh
-echo -e "\n\n Installing Fonts"
-curl  -L https://www.dropbox.com/sh/bkj1k5rwxtqsdbe/AAAkdJXP_iTBHM-j2ecC0tufa?dl=1 -o .fonts.tar.gz
+echo -e "\n\nInstalling Fonts"
+curl  -L https://www.dropbox.com/sh/bkj1k5rwxtqsdbe/AAAkdJXP_iTBHM-j2ecC0tufa?dl=1 -o /tmp/.fonts.tar.gz
 echo -e "Extracting font files"
-mkdir .fonts
-tar -zxf .fonts.tar.gz -C .fonts
-mv .fonts/*  ~/Library/Fonts/
-echo -e "\n\n Font Installed , cleaning files"
-pwd
-rm -rf .fonts
-rm -rf .fonts.tar.gz
+mkdir /tmp/.fonts
+tar -zxf /tmp/.fonts.tar.gz -C /tmp/.fonts
+mv /tmp/.fonts/*  ~/Library/Fonts/
+echo -e "\n\nFont Installed"

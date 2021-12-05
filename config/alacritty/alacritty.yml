@@ -1,0 +1,113 @@
+# Configuration for Alacritty, the GPU enhanced terminal emulator.
+
+window:
+  # Spread additional padding evenly around the terminal content.
+  dynamic_padding: true
+
+font:
+  # Normal font face - Also used to draw glyphs on tmux & VIM
+  # NOTE: You may use any font you'd like but make sure the normal fonts
+  # support ligatures/glyphs. That's used by tmux & VIM to provide a better
+  # UI for powerline & tmux bottom bar.
+  normal:
+    # Font name
+    family: FiraCode Nerd Font
+    # Font face
+    style: Regular
+
+  # Bold font face
+  bold:
+    family: FiraCode Nerd Font
+    style: Bold
+
+  # Italic font face
+  italic:
+    family: FiraCode Nerd Font
+    style: Italic
+
+  bold_italic:
+    family: FiraCode Nerd Font
+    style: Bold Italic
+
+  # Font size
+  size: 14.0
+
+  # Offset is the extra space around each character. `offset.y` can be thought of
+  # as modifying the line spacing, and `offset.x` as modifying the letter spacing
+  # I've given in 14 spacing which fits really well with my fonts, you may change it
+  # to your convenience but make sure to adjust 'glyph_offset' appropriately post that
+  offset:
+    x: 0
+    y: 4
+
+  # Note: This requires RESTART
+  # By default when you change the offset above you'll see an issue, where the texts are bottom
+  # aligned with the cursor, this is to make sure they center align.
+  # This offset should usually be 1/2 of the above offset-y being set.
+  glyph_offset:
+    x: 0
+    # Keeping this as half of offset to vertically align the text in cursor
+    y: 2
+
+  # Better font rendering for mac
+  use_thin_strokes: true
+
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+
+  # When set to `true`, selected text will be copied to the primary clipboard.
+  save_to_clipboard: true
+
+# Live config reload (changes require restart)
+live_config_reload: true
+
+key_bindings:
+  - {
+      key: Comma,
+      mods: Command,
+      command:
+        {
+          program: "sh",
+          args: ["-c", "code ~/.config/alacritty/alacritty.yml"],
+        },
+    }
+  - { key: N, mods: Command, action: SpawnNewInstance }
+  - { key: Space, mods: Alt, chars: " " }
+  - { key: Back, mods: Super, chars: "\x15" } # delete word/line
+  - { key: Left, mods: Alt, chars: "\x1bb" } # one word left
+  - { key: Right, mods: Alt, chars: "\x1bf" } # one word right
+  - { key: Left, mods: Command, chars: "\x1bOH", mode: AppCursor } # Home
+  - { key: Right, mods: Command, chars: "\x1bOF", mode: AppCursor } # End
+
+colors:
+  # Default colors
+  primary:
+    background: "0x011627"
+    foreground: "0xd6deeb"
+
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  cursor:
+    text: "0xffffff"
+    cursor: "0x7e57c2"
+
+  # Normal colors
+  normal:
+    black: "0x000000"
+    red: "0xef5350"
+    green: "0x22da6e"
+    yellow: "0xaddb67"
+    blue: "0x82aaff"
+    magenta: "0xc792ea"
+    cyan: "0x21c7a8"
+    white: "0xffffff"
+
+  # Bright colors
+  bright:
+    black: "0x575656"
+    red: "0xef5350"
+    green: "0x22da6e"
+    yellow: "0xffeb95"
+    blue: "0x82aaff"
+    magenta: "0xc792ea"
+    cyan: "0x7fdbca"
+    white: "0xffffff"
