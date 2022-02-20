@@ -2,61 +2,59 @@
 	default = current
 [color]
 	ui = true
-[commit]
-  template = ~/.gitmessage
 [fetch]
   prune = true
 [include]
   path = ~/.gitconfig.local
 [status]
   showUntrackedFiles = all
-[filter "lfs"]
-  clean = git-lfs clean %f
-  smudge = git-lfs smudge %f
-  required = true
-[alias]
-  s = status -s
-  last = log -1
-  lol = log --oneline
 [credential]
   helper = osxkeychain
 [pull]
   rebase = true
 [core]
-  pager = diff-so-fancy | less --tabs=4 -RFX
+  pager = delta
   excludesfile = ~/.gitignore
 [interactive]
-  diffFilter = diff-so-fancy
+  diffFilter = delta --color-only --features=interactive
 [merge]
-  tool = vscode
-[mergetool "vscode"]
-  cmd = code --wait $MERGED
+	tool = kdiff3
+	conflictstyle = diff3
 [mergetool]
   prompt = true
 [diff]
-  tool = vscode
+  tool = kdiff3
 	renameLimit = 644
-[difftool "vscode"]
-    cmd = code --wait --diff $LOCAL $REMOTE
+	guitool = kdiff3
 [user]
   name = "Imran Sulemanj"
   email = "imran.sulemanji@gmail.com"
 	signingkey = A580802781647F34
 [branch]
 	autoSetupMerge = always
-[color "diff-highlight"]
-	oldNormal = red bold
-	oldHighlight = red bold 52
-	newNormal = green bold
-	newHighlight = green bold 22
-[color "diff"]
-	meta = yellow
-	frag = magenta bold
-	commit = yellow bold
-	old = red bold
-	new = green bold
-	whitespace = red reverse
-[hub]
-	protocol = ssh
 [init]
 	defaultBranch = main
+[delta]
+    features = decorations
+[delta "interactive"]
+    keep-plus-minus-markers = false
+[delta "decorations"]
+    commit-decoration-style = blue ol
+    commit-style = raw
+    file-style = omit
+    hunk-header-decoration-style = blue box
+    hunk-header-file-style = red
+    hunk-header-line-number-style = "#067a00"
+    hunk-header-style = file line-number syntax
+[mergetool "kdiff3"]
+	path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
+	trustExitCode = false
+[difftool "kdiff3"]
+	path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
+	trustExitCode = false
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/local/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/local/bin/gh auth git-credential
