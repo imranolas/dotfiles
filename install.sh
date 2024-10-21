@@ -6,7 +6,9 @@ install_or_update_brew() {
     brew update
   else
     echo "Installing Brew"
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/imransulemanji/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
   fi
 }
 

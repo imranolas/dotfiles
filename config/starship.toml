@@ -1,4 +1,6 @@
 format = """
+$aws\
+$line_break\
 $username\
 $hostname\
 $directory\
@@ -7,7 +9,6 @@ $git_state\
 $git_status\
 $cmd_duration\
 $line_break\
-$python\
 $character"""
 
 [directory]
@@ -17,7 +18,6 @@ format = "[$path]($style)[$read_only]($read_only_style) "
 [character]
 success_symbol = "[❯](purple)"
 error_symbol = "[❯](red)"
-vicmd_symbol = "[❮](green)"
 
 [git_branch]
 format = "[$branch]($style)"
@@ -42,6 +42,10 @@ style = "bright-black"
 format = "[$duration]($style) "
 style = "yellow"
 
-[python]
-format = "[$virtualenv]($style) "
-style = "bright-black"
+[aws]
+format = 'on [$symbol($profile )(\($region\) )]($style)'
+style = 'bold blue'
+symbol = '🅰 '
+
+[line_break]
+disabled = false

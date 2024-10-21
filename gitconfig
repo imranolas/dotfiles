@@ -1,11 +1,10 @@
 [push]
 	default = current
+	autoSetupRemote = true
 [color]
 	ui = true
 [fetch]
   prune = true
-[include]
-  path = ~/.gitconfig.local
 [status]
   showUntrackedFiles = all
 [credential]
@@ -27,7 +26,7 @@
 	renameLimit = 644
 	guitool = kdiff3
 [user]
-  name = "Imran Sulemanj"
+	name = Imran Sulemanji
   email = "imran.sulemanji@gmail.com"
 	signingkey = A580802781647F34
 [branch]
@@ -35,17 +34,17 @@
 [init]
 	defaultBranch = main
 [delta]
-    features = decorations
+	features = decorations
 [delta "interactive"]
-    keep-plus-minus-markers = false
+	keep-plus-minus-markers = false
 [delta "decorations"]
-    commit-decoration-style = blue ol
-    commit-style = raw
-    file-style = omit
-    hunk-header-decoration-style = blue box
-    hunk-header-file-style = red
-    hunk-header-line-number-style = "#067a00"
-    hunk-header-style = file line-number syntax
+	commit-decoration-style = blue ol
+	commit-style = raw
+	file-style = omit
+	hunk-header-decoration-style = blue box
+	hunk-header-file-style = red
+	hunk-header-line-number-style = "#067a00"
+	hunk-header-style = file line-number syntax
 [mergetool "kdiff3"]
 	path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
 	trustExitCode = false
@@ -54,7 +53,24 @@
 	trustExitCode = false
 [credential "https://github.com"]
 	helper = 
-	helper = !/usr/local/bin/gh auth git-credential
+	helper = !/opt/homebrew/bin/gh auth git-credential
 [credential "https://gist.github.com"]
 	helper = 
-	helper = !/usr/local/bin/gh auth git-credential
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[alias]
+	lg = lg1
+	lg1 = lg1-specific --all
+	lg2 = lg2-specific --all
+	lg3 = lg3-specific --all
+
+	lg1-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'
+	lg2-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
+	lg3-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset) %C(bold cyan)(committed: %cD)%C(reset) %C(auto)%d%C(reset)%n''          %C(white)%s%C(reset)%n''          %C(dim white)- %an <%ae> %C(reset) %C(dim white)(committer: %cn <%ce>)%C(reset)'
+[gitbutler]
+	aiModelProvider = openai
+	diffLengthLimit = 20000

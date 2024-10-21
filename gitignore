@@ -8,3 +8,8 @@ node_modules
 .vscode
 .envrc
 .nova
+.clinic
+.op
+.husky/
+.pre-commit-config.yaml
+lefthook.yml
