@@ -1,0 +1,1 @@
+/Users/imransulemanji/.dotfiles/config/fish/fish_abbreviations.fish

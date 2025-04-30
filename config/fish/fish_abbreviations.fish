@@ -1,116 +1,116 @@
-abbr -a -- gban 'git branch -a -v --no-merged' # imported from a universal variable, see `help abbr`
-abbr -a -- gcom 'git checkout (__git.default_branch)' # imported from a universal variable, see `help abbr`
-abbr -a -- gfm 'git fetch origin (__git.default_branch) --prune; and git merge FETCH_HEAD' # imported from a universal variable, see `help abbr`
-abbr -a -- gsu 'git submodule update' # imported from a universal variable, see `help abbr`
-abbr -a -- gfo 'git fetch origin' # imported from a universal variable, see `help abbr`
-abbr -a -- gcav! 'git commit -a -v --no-verify --amend' # imported from a universal variable, see `help abbr`
-abbr -a -- gcpc 'git cherry-pick --continue' # imported from a universal variable, see `help abbr`
-abbr -a -- gcm 'git commit -m' # imported from a universal variable, see `help abbr`
-abbr -a -- gbs 'git bisect' # imported from a universal variable, see `help abbr`
-abbr -a -- gwtlo 'git worktree lock' # imported from a universal variable, see `help abbr`
-abbr -a -- gfhs 'git flow hotfix start' # imported from a universal variable, see `help abbr`
-abbr -a -- gmt 'git mergetool --no-prompt' # imported from a universal variable, see `help abbr`
-abbr -a -- gau 'git add --update' # imported from a universal variable, see `help abbr`
-abbr -a -- gstl 'git stash list' # imported from a universal variable, see `help abbr`
-abbr -a -- ga 'git add' # imported from a universal variable, see `help abbr`
-abbr -a -- gclean 'git clean -di' # imported from a universal variable, see `help abbr`
-abbr -a -- gdwc 'git diff --word-diff --cached' # imported from a universal variable, see `help abbr`
-abbr -a -- glg 'git log --stat' # imported from a universal variable, see `help abbr`
-abbr -a -- gclean! 'git clean -dfx' # imported from a universal variable, see `help abbr`
-abbr -a -- gcn! 'git commit -v --no-edit --amend' # imported from a universal variable, see `help abbr`
-abbr -a -- gpv! 'git push --no-verify --force-with-lease' # imported from a universal variable, see `help abbr`
-abbr -a -- gba 'git branch -a -v' # imported from a universal variable, see `help abbr`
-abbr -a -- gbd 'git branch -d' # imported from a universal variable, see `help abbr`
-abbr -a -- gfrt 'git flow release track' # imported from a universal variable, see `help abbr`
-abbr -a -- gcl 'git clone' # imported from a universal variable, see `help abbr`
-abbr -a -- glr 'git pull --rebase' # imported from a universal variable, see `help abbr`
-abbr -a -- gignore 'git update-index --assume-unchanged' # imported from a universal variable, see `help abbr`
-abbr -a -- gb 'git branch -vv' # imported from a universal variable, see `help abbr`
-abbr -a -- gbss 'git bisect start' # imported from a universal variable, see `help abbr`
-abbr -a -- gfs 'git flow support' # imported from a universal variable, see `help abbr`
-abbr -a -- gsh 'git show' # imported from a universal variable, see `help abbr`
-abbr -a -- gc! 'git commit -v --amend' # imported from a universal variable, see `help abbr`
-abbr -a -- grs 'git restore' # imported from a universal variable, see `help abbr`
-abbr -a -- gcam 'git commit -a -m' # imported from a universal variable, see `help abbr`
-abbr -a -- gaa 'git add --all' # imported from a universal variable, see `help abbr`
-abbr -a -- gcb 'git checkout -b' # imported from a universal variable, see `help abbr`
-abbr -a -- gd 'git diff' # imported from a universal variable, see `help abbr`
-abbr -a -- gca 'git commit -v -a' # imported from a universal variable, see `help abbr`
-abbr -a -- gfst 'git flow support track' # imported from a universal variable, see `help abbr`
-abbr -a -- gdca 'git diff --cached' # imported from a universal variable, see `help abbr`
-abbr -a -- grrm 'git remote remove' # imported from a universal variable, see `help abbr`
-abbr -a -- gclean!! 'git reset --hard; and git clean -dfx' # imported from a universal variable, see `help abbr`
-abbr -a -- gbsr 'git bisect reset' # imported from a universal variable, see `help abbr`
-abbr -a -- gdsc 'git diff --stat --cached' # imported from a universal variable, see `help abbr`
-abbr -a -- gfp 'git flow publish' # imported from a universal variable, see `help abbr`
-abbr -a -- gcod 'git checkout develop' # imported from a universal variable, see `help abbr`
-abbr -a -- gcan! 'git commit -v -a --no-edit --amend' # imported from a universal variable, see `help abbr`
-abbr -a -- gcp 'git cherry-pick' # imported from a universal variable, see `help abbr`
-abbr -a -- gcpa 'git cherry-pick --abort' # imported from a universal variable, see `help abbr`
-abbr -a -- gcv 'git commit -v --no-verify' # imported from a universal variable, see `help abbr`
-abbr -a -- gca! 'git commit -v -a --amend' # imported from a universal variable, see `help abbr`
-abbr -a -- grbs 'git rebase --skip' # imported from a universal variable, see `help abbr`
-abbr -a -- gwtpr 'git worktree prune' # imported from a universal variable, see `help abbr`
-abbr -a -- gc 'git commit -v' # imported from a universal variable, see `help abbr`
-abbr -a -- gdw 'git diff --word-diff' # imported from a universal variable, see `help abbr`
-abbr -a -- gbD 'git branch -D' # imported from a universal variable, see `help abbr`
-abbr -a -- gf 'git fetch' # imported from a universal variable, see `help abbr`
-abbr -a -- g git # imported from a universal variable, see `help abbr`
-abbr -a -- gff 'git flow feature' # imported from a universal variable, see `help abbr`
-abbr -a -- gss 'git status -s' # imported from a universal variable, see `help abbr`
-abbr -a -- gswc 'git switch --create' # imported from a universal variable, see `help abbr`
-abbr -a -- gffs 'git flow feature start' # imported from a universal variable, see `help abbr`
-abbr -a -- gr 'git remote -vv' # imported from a universal variable, see `help abbr`
-abbr -a -- gfft 'git flow feature track' # imported from a universal variable, see `help abbr`
-abbr -a -- gunignore 'git update-index --no-assume-unchanged' # imported from a universal variable, see `help abbr`
-abbr -a -- gfht 'git flow hotfix track' # imported from a universal variable, see `help abbr`
-abbr -a -- gbl 'git blame -b -w' # imported from a universal variable, see `help abbr`
-abbr -a -- gfr 'git flow release' # imported from a universal variable, see `help abbr`
-abbr -a -- gfh 'git flow hotfix' # imported from a universal variable, see `help abbr`
-abbr -a -- grbmi 'git rebase (__git.default_branch) --interactive' # imported from a universal variable, see `help abbr`
-abbr -a -- gfss 'git flow support start' # imported from a universal variable, see `help abbr`
-abbr -a -- glgga 'git log --graph --decorate --all' # imported from a universal variable, see `help abbr`
-abbr -a -- gl 'git pull' # imported from a universal variable, see `help abbr`
-abbr -a -- gapa 'git add --patch' # imported from a universal variable, see `help abbr`
-abbr -a -- glod 'git log --oneline --decorate --color develop..' # imported from a universal variable, see `help abbr`
-abbr -a -- glgg 'git log --graph' # imported from a universal variable, see `help abbr`
-abbr -a -- glo 'git log --oneline --decorate --color' # imported from a universal variable, see `help abbr`
-abbr -a -- gds 'git diff --stat' # imported from a universal variable, see `help abbr`
-abbr -a -- gbsg 'git bisect good' # imported from a universal variable, see `help abbr`
-abbr -a -- gll 'git pull origin' # imported from a universal variable, see `help abbr`
-abbr -a -- glog 'git log --oneline --decorate --color --graph' # imported from a universal variable, see `help abbr`
-abbr -a -- gloo git\ log\ --pretty=format:\'\%C\(yellow\)\%h\ \%Cred\%ad\ \%Cblue\%an\%Cgreen\%d\ \%Creset\%s\'\ --date=short # imported from a universal variable, see `help abbr`
-abbr -a -- gpo 'git push origin' # imported from a universal variable, see `help abbr`
-abbr -a -- gm 'git merge' # imported from a universal variable, see `help abbr`
-abbr -a -- gp! 'git push --force-with-lease' # imported from a universal variable, see `help abbr`
-abbr -a -- gcf 'git config --list' # imported from a universal variable, see `help abbr`
-abbr -a -- gpo! 'git push --force-with-lease origin' # imported from a universal variable, see `help abbr`
-abbr -a -- grbdi 'git rebase develop --interactive' # imported from a universal variable, see `help abbr`
-abbr -a -- gpu 'ggp --set-upstream' # imported from a universal variable, see `help abbr`
-abbr -a -- gpv 'git push --no-verify' # imported from a universal variable, see `help abbr`
-abbr -a -- grev 'git revert' # imported from a universal variable, see `help abbr`
-abbr -a -- gra 'git remote add' # imported from a universal variable, see `help abbr`
-abbr -a -- grbc 'git rebase --continue' # imported from a universal variable, see `help abbr`
-abbr -a -- gsr 'git svn rebase' # imported from a universal variable, see `help abbr`
-abbr -a -- gap 'git apply' # imported from a universal variable, see `help abbr`
-abbr -a -- gdto 'git difftool' # imported from a universal variable, see `help abbr`
-abbr -a -- gupav 'git pull --rebase --autostash -v' # imported from a universal variable, see `help abbr`
-abbr -a -- gwtmv 'git worktree move' # imported from a universal variable, see `help abbr`
-abbr -a -- gfa 'git fetch --all --prune' # imported from a universal variable, see `help abbr`
-abbr -a -- grba 'git rebase --abort' # imported from a universal variable, see `help abbr`
-abbr -a -- grbd 'git rebase develop' # imported from a universal variable, see `help abbr`
-abbr -a -- grv 'git remote -v' # imported from a universal variable, see `help abbr`
-abbr -a -- grbm 'git rebase (__git.default_branch)' # imported from a universal variable, see `help abbr`
-abbr -a -- grbmia 'git rebase (__git.default_branch) --interactive --autosquash' # imported from a universal variable, see `help abbr`
-abbr -a -- grup 'git remote update' # imported from a universal variable, see `help abbr`
-abbr -a -- gfrs 'git flow release start' # imported from a universal variable, see `help abbr`
-abbr -a -- gcfx 'git commit --fixup' # imported from a universal variable, see `help abbr`
-abbr -a -- gfb 'git flow bugfix' # imported from a universal variable, see `help abbr`
-abbr -a -- grh 'git reset' # imported from a universal variable, see `help abbr`
-abbr -a -- gmom 'git merge origin/(__git.default_branch)' # imported from a universal variable, see `help abbr`
-abbr -a -- grhh 'git reset --hard' # imported from a universal variable, see `help abbr`
-abbr -a -- gtv 'git tag' # imported from a universal variable, see `help abbr`
-abbr -a -- grhpa 'git reset --patch' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gban 'git branch -a -v --no-merged' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gcom 'git checkout (__git.default_branch)' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gfm 'git fetch origin (__git.default_branch) --prune; and git merge FETCH_HEAD' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gsu 'git submodule update' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gfo 'git fetch origin' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gcav! 'git commit -a -v --no-verify --amend' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gcpc 'git cherry-pick --continue' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gcm 'git commit -m' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gbs 'git bisect' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gwtlo 'git worktree lock' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gfhs 'git flow hotfix start' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gmt 'git mergetool --no-prompt' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gau 'git add --update' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gstl 'git stash list' # imported from a universal variable, see `help abbr`
+abbr -a -U -- ga 'git add' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gclean 'git clean -di' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gdwc 'git diff --word-diff --cached' # imported from a universal variable, see `help abbr`
+abbr -a -U -- glg 'git log --stat' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gclean! 'git clean -dfx' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gcn! 'git commit -v --no-edit --amend' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gpv! 'git push --no-verify --force-with-lease' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gba 'git branch -a -v' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gbd 'git branch -d' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gfrt 'git flow release track' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gcl 'git clone' # imported from a universal variable, see `help abbr`
+abbr -a -U -- glr 'git pull --rebase' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gignore 'git update-index --assume-unchanged' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gb 'git branch -vv' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gbss 'git bisect start' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gfs 'git flow support' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gsh 'git show' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gc! 'git commit -v --amend' # imported from a universal variable, see `help abbr`
+abbr -a -U -- grs 'git restore' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gcam 'git commit -a -m' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gaa 'git add --all' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gcb 'git checkout -b' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gd 'git diff' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gca 'git commit -v -a' # imported from a universal variable, see
+abbr -a -U -- gfst 'git flow support track' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gdca 'git diff --cached' # imported from a universal variable, see `help abbr`
+abbr -a -U -- grrm 'git remote remove' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gclean!! 'git reset --hard; and git clean -dfx' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gbsr 'git bisect reset' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gdsc 'git diff --stat --cached' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gfp 'git flow publish' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gcod 'git checkout develop' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gcan! 'git commit -v -a --no-edit --amend' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gcp 'git cherry-pick' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gcpa 'git cherry-pick --abort' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gcv 'git commit -v --no-verify' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gca! 'git commit -v -a --amend' # imported from a universal variable, see `help abbr`
+abbr -a -U -- grbs 'git rebase --skip' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gwtpr 'git worktree prune' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gc 'git commit -v' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gdw 'git diff --word-diff' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gbD 'git branch -D' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gf 'git fetch' # imported from a universal variable, see `help abbr`
+abbr -a -U -- g git # imported from a universal variable, see `help abbr`
+abbr -a -U -- gff 'git flow feature' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gss 'git status -s' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gswc 'git switch --create' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gffs 'git flow feature start' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gr 'git remote -vv' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gfft 'git flow feature track' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gunignore 'git update-index --no-assume-unchanged' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gfht 'git flow hotfix track' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gbl 'git blame -b -w' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gfr 'git flow release' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gfh 'git flow hotfix' # imported from a universal variable, see `help abbr`
+abbr -a -U -- grbmi 'git rebase (__git.default_branch) --interactive' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gfss 'git flow support start' # imported from a universal variable, see `help abbr`
+abbr -a -U -- glgga 'git log --graph --decorate --all' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gl 'git pull' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gapa 'git add --patch' # imported from a universal variable, see `help abbr`
+abbr -a -U -- glod 'git log --oneline --decorate --color develop..' # imported from a universal variable, see `help abbr`
+abbr -a -U -- glgg 'git log --graph' # imported from a universal variable, see `help abbr`
+abbr -a -U -- glo 'git log --oneline --decorate --color' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gds 'git diff --stat' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gbsg 'git bisect good' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gll 'git pull origin' # imported from a universal variable, see `help abbr`
+abbr -a -U -- glog 'git log --oneline --decorate --color --graph' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gloo git\ log\ --pretty=format:\'\%C\(yellow\)\%h\ \%Cred\%ad\ \%Cblue\%an\%Cgreen\%d\ \%Creset\%s\'\ --date=short # imported from a universal variable, see `help abbr`
+abbr -a -U -- gpo 'git push origin' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gm 'git merge' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gp! 'git push --force-with-lease' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gcf 'git config --list' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gpo! 'git push --force-with-lease origin' # imported from a universal variable, see `help abbr`
+abbr -a -U -- grbdi 'git rebase develop --interactive' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gpu 'ggp --set-upstream' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gpv 'git push --no-verify' # imported from a universal variable, see `help abbr`
+abbr -a -U -- grev 'git revert' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gra 'git remote add' # imported from a universal variable, see `help abbr`
+abbr -a -U -- grbc 'git rebase --continue' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gsr 'git svn rebase' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gap 'git apply' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gdto 'git difftool' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gupav 'git pull --rebase --autostash -v' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gwtmv 'git worktree move' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gfa 'git fetch --all --prune' # imported from a universal variable, see `help abbr`
+abbr -a -U -- grba 'git rebase --abort' # imported from a universal variable, see `help abbr`
+abbr -a -U -- grbd 'git rebase develop' # imported from a universal variable, see `help abbr`
+abbr -a -U -- grv 'git remote -v' # imported from a universal variable, see `help abbr`
+abbr -a -U -- grbm 'git rebase (__git.default_branch)' # imported from a universal variable, see `help abbr`
+abbr -a -U -- grbmia 'git rebase (__git.default_branch) --interactive --autosquash' # imported from a universal variable, see `help abbr`
+abbr -a -U -- grup 'git remote update' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gfrs 'git flow release start' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gcfx 'git commit --fixup' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gfb 'git flow bugfix' # imported from a universal variable, see `help abbr`
+abbr -a -U -- grh 'git reset' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gmom 'git merge origin/(__git.default_branch)' # imported from a universal variable, see `help abbr`
+abbr -a -U -- grhh 'git reset --hard' # imported from a universal variable, see `help abbr`
+abbr -a -U -- gtv 'git tag' # imported from a universal variable, see `help abbr`
+abbr -a -U -- grhpa 'git reset --patch' # imported from a universal variable, see `help abbr
 abbr -a -- grm 'git rm' # imported from a universal variable, see `help abbr`
 abbr -a -- glom 'git log --oneline --decorate --color (__git.default_branch)..' # imported from a universal variable, see `help abbr`
 abbr -a -- grmc 'git rm --cached' # imported from a universal variable, see `help abbr`
