@@ -1,5 +1,6 @@
 #!/usr/bin/env fish
-
-curl -sL https://git.io/fisher | source
+# Install fisher if missing, then sync plugins from ~/.config/fish/fish_plugins
+if not functions -q fisher
+    curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source
+end
 fisher update
-echo ""

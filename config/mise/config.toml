@@ -1,0 +1,11 @@
+# Global tool versions. Per-project versions go in a mise.toml (or .nvmrc /
+# .python-version / .tool-versions, which mise also reads) in the repo.
+[tools]
+node = "lts"
+python = "3.13"
+bun = "latest"
+pnpm = "latest"
+
+[settings]
+# Read .nvmrc, .python-version etc. from existing projects
+idiomatic_version_file_enable_tools = ["node", "python"]

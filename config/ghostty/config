@@ -1,0 +1,49 @@
+# Ghostty config — ported from the old Alacritty setup.
+# Reload with cmd+shift+, ; list options with `ghostty +show-config --default --docs`
+
+# Font
+font-family = FiraCode Nerd Font
+font-size = 14
+adjust-cell-height = 4
+
+# Window
+window-padding-balance = true
+window-padding-x = 8
+window-padding-y = 8
+macos-titlebar-style = tabs
+
+# Copy selected text to the system clipboard (was save_to_clipboard)
+copy-on-select = clipboard
+
+# Option acts as Alt, so alt+left/right move by word
+macos-option-as-alt = true
+keybind = alt+left=esc:b
+keybind = alt+right=esc:f
+keybind = super+left=text:\x01
+keybind = super+right=text:\x05
+keybind = super+backspace=text:\x15
+
+# Copy terminfo to remote hosts so ssh sessions don't complain about xterm-ghostty
+shell-integration-features = ssh-terminfo
+
+# Night Owl palette (from the old alacritty.yml)
+background = 011627
+foreground = d6deeb
+cursor-color = 7e57c2
+cursor-text = ffffff
+palette = 0=#000000
+palette = 1=#ef5350
+palette = 2=#22da6e
+palette = 3=#addb67
+palette = 4=#82aaff
+palette = 5=#c792ea
+palette = 6=#21c7a8
+palette = 7=#ffffff
+palette = 8=#575656
+palette = 9=#ef5350
+palette = 10=#22da6e
+palette = 11=#ffeb95
+palette = 12=#82aaff
+palette = 13=#c792ea
+palette = 14=#7fdbca
+palette = 15=#ffffff

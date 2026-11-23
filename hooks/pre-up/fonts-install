@@ -1,8 +1,0 @@
-#!/bin/sh
-echo -e "\n\nInstalling Fonts"
-curl  -L https://www.dropbox.com/sh/bkj1k5rwxtqsdbe/AAAkdJXP_iTBHM-j2ecC0tufa?dl=1 -o /tmp/.fonts.tar.gz
-echo -e "Extracting font files"
-mkdir /tmp/.fonts
-tar -zxf /tmp/.fonts.tar.gz -C /tmp/.fonts
-mv /tmp/.fonts/*  ~/Library/Fonts/
-echo -e "\n\nFont Installed"

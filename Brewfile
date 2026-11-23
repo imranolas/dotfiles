@@ -1,29 +1,48 @@
+# Core
+brew "coreutils"
+brew "fish"
+brew "git"
+brew "git-delta"
+brew "git-lfs"
+brew "gh"
+brew "rcm"
+brew "starship"
+brew "tmux"
+
+# Runtimes & env
+brew "mise"
+brew "direnv"
+
+# CLI tools
+brew "atuin"
+brew "bat"
+brew "eza"
+brew "fd"
+brew "fzf"
+brew "grc"
+brew "jq"
+brew "lazygit"
+brew "ripgrep"
+brew "zoxide"
+
+# AWS
 brew "awscli"
 brew "awsume"
-brew "coreutils"
-brew "direnv"
-brew "fish"
-brew "fzf"
-brew "gh"
-brew "git-delta"
-brew "git"
-brew "grc"
-brew "reattach-to-user-namespace"
-brew "starship"
+brew "aws-vault"
 
-tap "homebrew/cask"
-
+# Apps
 cask "1password"
-cask "arc"
-cask "aws-vault"
-cask "charles"
-cask "colorsnapper"
-cask "gas-mask"
+cask "1password-cli"
+cask "ghostty"
 cask "orbstack"
+cask "proxyman"
 cask "raycast"
 cask "slack"
 cask "spotify"
 cask "visual-studio-code"
-cask "warp"
+cask "zed"
 cask "whatsapp"
 cask "zoom"
+
+# Fonts
+cask "font-fira-code-nerd-font"

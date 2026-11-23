@@ -1,40 +1,61 @@
+[user]
+	name = Imran Sulemanji
+	email = imran.sulemanji@gmail.com
+	# Signing key (1Password SSH key) is set per machine in ~/.gitconfig.local
+
+[core]
+	editor = zed --wait
+	pager = delta
+	excludesfile = ~/.gitignore
+[init]
+	defaultBranch = main
+[color]
+	ui = true
+[status]
+	showUntrackedFiles = all
+
 [push]
 	default = current
 	autoSetupRemote = true
-[color]
-	ui = true
 [fetch]
-  prune = true
-[status]
-  showUntrackedFiles = all
-[credential]
-  helper = osxkeychain
+	prune = true
 [pull]
-  rebase = true
-[core]
-  pager = delta
-  excludesfile = ~/.gitignore
-[interactive]
-  diffFilter = delta --color-only --features=interactive
-[merge]
-	tool = kdiff3
-	conflictstyle = diff3
-[mergetool]
-  prompt = true
-[diff]
-  tool = kdiff3
-	renameLimit = 644
-	guitool = kdiff3
-[user]
-	name = Imran Sulemanji
-  email = "imran.sulemanji@gmail.com"
-	signingkey = A580802781647F34
+	rebase = true
 [branch]
 	autoSetupMerge = always
-[init]
-	defaultBranch = main
+[rebase]
+	autoStash = true
+	updateRefs = true
+[rerere]
+	enabled = true
+
+[diff]
+	algorithm = histogram
+	colorMoved = default
+	renameLimit = 644
+	tool = vscode
+[difftool "vscode"]
+	cmd = code --wait --diff $LOCAL $REMOTE
+[merge]
+	conflictstyle = zdiff3
+	tool = vscode
+[mergetool]
+	prompt = true
+[mergetool "vscode"]
+	cmd = code --wait --merge $REMOTE $LOCAL $BASE $MERGED
+
+# Commit signing via 1Password's SSH agent. Turned on per machine in
+# ~/.gitconfig.local (user.signingkey + commit.gpgsign = true).
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+
+[interactive]
+	diffFilter = delta --color-only --features=interactive
 [delta]
 	features = decorations
+	navigate = true
 [delta "interactive"]
 	keep-plus-minus-markers = false
 [delta "decorations"]
@@ -45,23 +66,21 @@
 	hunk-header-file-style = red
 	hunk-header-line-number-style = "#067a00"
 	hunk-header-style = file line-number syntax
-[mergetool "kdiff3"]
-	path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
-	trustExitCode = false
-[difftool "kdiff3"]
-	path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
-	trustExitCode = false
+
+[credential]
+	helper = osxkeychain
 [credential "https://github.com"]
-	helper = 
+	helper =
 	helper = !/opt/homebrew/bin/gh auth git-credential
 [credential "https://gist.github.com"]
-	helper = 
+	helper =
 	helper = !/opt/homebrew/bin/gh auth git-credential
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+
 [alias]
 	lg = lg1
 	lg1 = lg1-specific --all
@@ -71,6 +90,7 @@
 	lg1-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'
 	lg2-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
 	lg3-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset) %C(bold cyan)(committed: %cD)%C(reset) %C(auto)%d%C(reset)%n''          %C(white)%s%C(reset)%n''          %C(dim white)- %an <%ae> %C(reset) %C(dim white)(committer: %cn <%ce>)%C(reset)'
-[gitbutler]
-	aiModelProvider = openai
-	diffLengthLimit = 20000
+
+# Machine-specific overrides (work email, signing key). Must stay last so it wins.
+[include]
+	path = ~/.gitconfig.local

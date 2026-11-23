@@ -1,0 +1,2 @@
+EXCLUDES="README.md LICENSE Brewfile install.sh macos.sh"
+DOTFILES_DIRS="$HOME/.dotfiles"

@@ -1,42 +1,32 @@
-set -U fish_greeting "🐟" 
-set PATH ./node_modules/.bin $PATH
-set PATH /opt/homebrew/bin $PATH
-set PATH ~/bin $PATH
+# Homebrew (also sets MANPATH etc.)
+/opt/homebrew/bin/brew shellenv fish | source
 
-alias vim nvim
+fish_add_path -g ~/bin ~/.local/bin
 
-direnv hook fish | source
+set -g fish_greeting "🐟"
+set -gx EDITOR "zed --wait"
+set -gx VISUAL $EDITOR
 
-# tabtab source for packages
-# uninstall by removing these lines
-[ -f ~/.config/tabtab/__tabtab.fish ]; and . ~/.config/tabtab/__tabtab.fish; or true
-
-set -x YVM_DIR /Users/imransulemanji/.yvm
-[ -r $YVM_DIR/yvm.fish ]; and source $YVM_DIR/yvm.fish
-
-starship init fish | source
-pyenv init - | source
-
-set -gx VOLTA_HOME "$HOME/.volta"
-set -gx PATH "$VOLTA_HOME/bin" $PATH
-source /Users/imransulemanji/.config/op/plugins.sh
-
-# https://starship.rs/advanced-config/#transientprompt-and-transientrightprompt-in-fish
-enable_transience
+# pnpm / bun global installs (the runtimes themselves come from mise)
+set -gx PNPM_HOME ~/Library/pnpm
+set -gx BUN_INSTALL ~/.bun
+fish_add_path -g $PNPM_HOME $BUN_INSTALL/bin
 
 if status is-interactive
-  printf '\eP$f{"hook": "SourcedRcFileForWarp", "value": { "shell": "fish"}}\x9c'
+    mise activate fish | source
+    direnv hook fish | source
+    zoxide init fish | source
+    fzf --fish | source
+    atuin init fish --disable-up-arrow | source # after fzf so atuin owns ctrl-r
+
+    # 1Password shell plugins (created by `op plugin init`)
+    test -f ~/.config/op/plugins.sh; and source ~/.config/op/plugins.sh
+
+    abbr -a ls eza
+    abbr -a ll 'eza -l --git'
+    abbr -a la 'eza -la --git'
+    abbr -a lg lazygit
+
+    starship init fish | source
+    enable_transience
 end
-
-# bun
-set --export BUN_INSTALL "$HOME/.bun"
-set --export PATH $BUN_INSTALL/bin $PATH
-
-# pnpm
-set -gx PNPM_HOME "/Users/imransulemanji/Library/pnpm"
-if not string match -q -- $PNPM_HOME $PATH
-  set -gx PATH "$PNPM_HOME" $PATH
-end
-# pnpm end
-
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
