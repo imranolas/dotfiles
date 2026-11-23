@@ -33,16 +33,8 @@
 	algorithm = histogram
 	colorMoved = default
 	renameLimit = 644
-	tool = vscode
-[difftool "vscode"]
-	cmd = code --wait --diff $LOCAL $REMOTE
 [merge]
 	conflictstyle = zdiff3
-	tool = vscode
-[mergetool]
-	prompt = true
-[mergetool "vscode"]
-	cmd = code --wait --merge $REMOTE $LOCAL $BASE $MERGED
 
 # Commit signing via 1Password's SSH agent. Turned on per machine in
 # ~/.gitconfig.local (user.signingkey + commit.gpgsign = true).

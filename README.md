@@ -21,9 +21,8 @@ links the dotfiles with `rcup`, installs runtimes with mise, and makes fish the 
 | `config/ghostty` | Terminal |
 | `config/mise` | Global node / python / bun / pnpm versions |
 | `config/starship.toml` | Prompt |
-| `gitconfig`, `gitignore` | Git (delta pager, VS Code merge tool, Zed editor, SSH signing via 1Password) |
+| `gitconfig`, `gitignore` | Git (delta pager, Zed editor, SSH signing via 1Password) |
 | `ssh/config` | Uses the 1Password SSH agent |
-| `tmux.conf` | tmux |
 | `macos.sh` | macOS defaults |
 
 ## Per-machine config (not tracked)
